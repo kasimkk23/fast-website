@@ -1,3 +1,15 @@
+/* Basic CSS rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
 /* Define color Pallete */
 :root {
   --color-primary: #2584ff;
@@ -6,7 +18,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
-
+/* Typoghraphy */
 /* 62.5% of 16px = 10px */
 html {
   font-size: 62.5%;
@@ -38,6 +50,7 @@ p {
   margin-top: 0;
 }
 
+/* For desktop screen for body and font sizes*/
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -51,5 +64,27 @@ p {
   }
   h3 {
     font-size: 2.4rem;
+  }
+}
+
+/* Links */
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+/* For desktop screen for link-arrow*/
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
