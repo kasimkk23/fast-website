@@ -50,7 +50,7 @@ p {
   margin-top: 0;
 }
 
-/* For desktop screen for body and font sizes*/
+/* Desktop screen for body and font sizes*/
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.8rem;
@@ -82,9 +82,41 @@ p {
 .link-arrow:hover::after {
   margin-left: 10px;
 }
-/* For desktop screen for link-arrow*/
+/* Desktop screen for link-arrow*/
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/* Badges*/
+/* Define structure using OOP*/
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+/* Define skin using OOP*/
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.badge--small {
+  font-size: 1.6rem;
+}
+
+/* Desktop screen for badges*/
+@media screen and (min-width: 1024) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
