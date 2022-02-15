@@ -13,3 +13,16 @@ ul.list>li{Item $}*3
   list-style: none;
   border: none;
 }
+
+We are using bottom up approch (component first) unlike Top down
+(end up having weird issues)
+
+# card__header =>and it is an element inside this class "card" and 
+it refers as that "header" can not exsist on it own outside of this component. 
+
+# card--primary => it refers as primary is a skin of card class.
+
+#box-shadow: 0 0 20px 10px #fff;
+-> 0 0 => horizontal/vertical offset
+-> 20px => blurring the shadow and softer
+-> 20px => spreading the shadow
