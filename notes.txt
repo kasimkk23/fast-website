@@ -29,3 +29,8 @@ it refers as that "header" can not exsist on it own outside of this component.
 
 # for skewing images(Polygon) use this website: 
 https://bennettfeely.com/clippy/
+
+
+# We use this tech to center the container or items #
+max-width: 500px;
+margin: 0 auto;
