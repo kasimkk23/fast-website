@@ -136,6 +136,7 @@ p {
 .list {
   padding-left: 0;
   color: var(--color-headings);
+  list-style-type: none;
 }
 /* define skin */
 .list--inline .list__item {
@@ -197,6 +198,12 @@ p {
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap; /* 2dnline eleminator */
+}
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 .btn--primary {
   background: var(--color-primary);
@@ -264,7 +271,7 @@ p {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -613,5 +620,29 @@ p {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #ebebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  margin-top: 4rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
