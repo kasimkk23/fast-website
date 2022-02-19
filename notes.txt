@@ -26,3 +26,6 @@ it refers as that "header" can not exsist on it own outside of this component.
 -> 0 0 => horizontal/vertical offset
 -> 20px => blurring the shadow and softer
 -> 20px => spreading the shadow
+
+# for skewing images(Polygon) use this website: 
+https://bennettfeely.com/clippy/
